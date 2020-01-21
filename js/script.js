@@ -1,11 +1,18 @@
-var listaNumeriRandom = []
+var listaNumeriRandom = [];
 
 for (var i = 0; i < 5; i++) {
   listaNumeriRandom.push(generatore(1, 100));
 }
-alert (listaNumeriRandom);
+// alert (listaNumeriRandom);
+//
+// setTimeout(richiestaNumeri, 1000);
+//
+console.log(listaNumeriRandom);
+// console.log(setTimeout(richiestaNumeri, 1000));
 
-setTimeout(richiestaNumeri, 30000);
+// crea lista risposte utente
+
+console.log(setTimeout(richiestaNumeri, 1000));
 
 
 // funzioni
@@ -17,7 +24,11 @@ function generatore (min, max){
 }
 
 function richiestaNumeri() {
-  for (var i = 0; i < listaNumeriRandom.length; i++) {
-  parseInt(prompt('inserisci uno dei numeri visualizzati prima'));
-  }
+  var risposte =[];
+  var i= 0;
+  while (i < listaNumeriRandom.length) {
+  risposte.push(parseInt(prompt('inserisci uno dei numeri visualizzati prima')));
+  i++;
+};
+return risposte;
 }
