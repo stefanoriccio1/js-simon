@@ -18,6 +18,6 @@ function generator (min, max){
 
 function richiestaNumeri() {
   for (var i = 0; i < listaNumeriRandom.length; i++) {
-  numeriUtente.push(parseInt(prompt('inserisci uno dei numeri visualizzati prima')));
+  parseInt(prompt('inserisci uno dei numeri visualizzati prima'));
   }
 }
