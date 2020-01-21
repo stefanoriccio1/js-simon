@@ -1,15 +1,15 @@
 var listaNumeriRandom = []
 
 for (var i = 0; i < 5; i++) {
-  listaNumeriRandom.push(generator(1, 100));
+  listaNumeriRandom.push(generatore(1, 100));
 }
 alert (listaNumeriRandom);
 
-setTimeout(richiestaNumeri, 1000);
+setTimeout(richiestaNumeri, 30000);
 
 
 // funzioni
-function generator (min, max){
+function generatore (min, max){
   min = Math.ceil(min);
   max = Math.floor (max);
   var random = Math.floor(Math.random() * (max - min + 1)) + min;
